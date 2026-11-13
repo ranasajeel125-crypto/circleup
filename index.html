@@ -3041,14 +3041,9 @@
 
         var foot = el("div", "panel");
         foot.innerHTML = '<div class="footer-links">' +
-          '<a href="#" data-dead>About</a><a href="#" data-dead>Careers</a><a href="#" data-dead>Press</a><br />' +
-          '<a href="#" data-dead>Advertise</a><a href="#" data-dead>Help</a><a href="#" data-dead>Blog</a><br />' +
-          '<a href="#" data-dead>Terms</a><a href="#" data-dead>Privacy Policy</a><a href="#" data-dead>Content Policy</a><br />' +
+          '<a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/privacy-policy.html">Content Policy</a><br />' +
           '<span>CircleUp Clone — a demo community website.<br />Posts and members shown are sample content.</span></div>';
         container.appendChild(foot);
-        foot.querySelectorAll("[data-dead]").forEach(function (a) {
-          a.addEventListener("click", function (e) { e.preventDefault(); toast("Demo page — this link is not wired up."); });
-        });
       }
 
       /* ---------------- Feed logic ---------------- */
